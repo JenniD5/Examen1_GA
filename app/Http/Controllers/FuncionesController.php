@@ -22,12 +22,12 @@ class FuncionesController extends Controller
         {
             if ($funciones->delete())
             {
-                return redirect()->route('funciones.index', $id) ->with('sucess', 'esa funciones ha sido borrada con exito');
+                return redirect()->route('funciones.index', $id) ->with('sucess', 'esa funcion ha sido borrada con exito');
 
             }
-            return redirect()->route('funciones.index')->with('error', 'no se pudo encontrar la variante');
+            return redirect()->route('funciones.index')->with('error', 'no se pudo encontrar la funcion');
         }
-        return redirect()->route('funciones.index')->with('error', 'no se pudo encontrar la variante');
+        return redirect()->route('funciones.index')->with('error', 'no se pudo encontrar la funcion');
 
     }
 
